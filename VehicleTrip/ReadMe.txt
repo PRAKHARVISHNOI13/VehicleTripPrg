@@ -2,13 +2,8 @@ Assumptions –
 
 1-	It has been assumed, that data will be in sync ie there is no such case where STOP for a CAR come earlier then START of CAR
 2-	Application has been designed for 4 cars .
-<<<<<<< HEAD
 3-	There no incomplete or unknown command, if there is, it will be taken as NONE.
 4-	Reading instruction file from C:\test\filename.txt . Placed a sample in "com.vehicle" package.
-=======
-3-	There is no incomplete or unknown command, if it is it will be taken as NONE.
-4-	Reading instruction file from C:\test\filename.txt . Placed a sample in com.vehicle package.
->>>>>>> 01fd6146184e46856c47cdd5ade351805d8ae07e
 
 API output –
 
@@ -36,7 +31,7 @@ Architecture –
 Application has been made on Spring boot and as instructed in-memory database HSSQLDB.
 
 
-File -------------------------> Writer ---> In Memory Queue --- >  Reader----> In memory Database
+File ----------------> Writer ---> In Memory Queue --- >  Reader----> In memory Database
 (C:\test\filename.txt)
 
 
@@ -51,8 +46,13 @@ How to Run-
 
 If import the project in – (eclipse ide)
 
-Build Project by - mvn clean install
+Build Project by - mvn clean install ( While Build One can see Unit test Result)
 Run it by – class –
 com.vehicle.VehicleTripApplication
 
 Right click – Run as java Application
+
+
+Test Cases -
+1-API testing - with help of Mockito
+2- Database testing 
